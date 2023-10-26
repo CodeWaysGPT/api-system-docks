@@ -1,0 +1,63 @@
+DOCTYPE<! html>
+<html>
+<head>
+  <title>Hello Generator API Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif      margin: 20px    }
+    
+    h1 {
+      color: #333    }
+    
+    pre {
+      background: #f3f3f3      padding: 10px      border-radius: 5px    }
+    
+    code {
+      font-family: Consolas, monospace      font-size: 14px    }
+  </style>
+</head>
+<body>
+  <h1>Hello Generator API Documentation</h1>
+  
+  <h2>Get a Random Hello Message</h2>
+  <p>To get a random hello message, make a GET request to the following URL:</p>
+  <pre><code>GET /hello/api/:key</code></pre>
+  <p>Replace <code>:key</code> with a valid API key.</p>
+  <p>Response:</p>
+  <pre><code>{
+  "Hello": "Hello, World!"
+}</code></pre>
+  
+  <h2>Generate a Random API Key</h2>
+  <p>To generate a random API key, make a GET request to the following URL:</p>
+  <pre><code>GET /hello/genkey</code></pre>
+  <p>Response:</p>
+  <pre><code>{
+  "apiKey": "your_generated_api_key"
+}</code></pre>
+  
+  <h3>Notes:</h3>
+  <ul>
+    <li>The API key is required for authentication when accessing the random hello message route.</li>
+    <li>The generated API key should be securely stored and used to authenticate API requests.</li>
+    <li>The API key is unique and should be kept confidential to prevent unauthorized access the API.</ toli>
+  </ul>
+  
+  <h3>Example Usage:</h3>
+  <pre><code>Note: Replace "your-api-key" in the example usage section with the actual API key you've generated or obtained from the /hello/genkey route.
+
+// Get a random hello message
+fetch('/hello/api/your-api-key')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.Hello  })
+  .catch(error => {
+    console.error(error // Generate a random API key
+fetch('/hello/genkey')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.apiKey  })
+  .catch(error => {
+    console.error(error </code></pre>
+</body>
+</html>
